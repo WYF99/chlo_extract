@@ -17,7 +17,7 @@ arXiv version: https://arxiv.org/pdf/2408.16995
   title = {{Characterizing User Platforms for Video Streaming in Broadband Networks}},
   year = {2024},
   month = nov,
-  location = {Madrid, Spain},
+  address = {Madrid, Spain},
   doi = {10.1145/3646547.3688435},
 }
 ```
@@ -26,5 +26,20 @@ arXiv version: https://arxiv.org/pdf/2408.16995
 
 This repo contains code for extracting handshake attributes from video flows.
 
-The training dataset containing video flows of YouTube, Netflix, Disney+ and Amazon Prime Video across user platforms is shared on our university OneDrive folder.
-To request for the data, please contact the corresponding author, [Minzhao Lyu](mailto:minzhao.lyu@unsw.edu.au).
+The training dataset containing video flows of YouTube, Netflix, Disney+ and Amazon Prime Video across user platforms is shared on our university cloud drive and can be accessed here:
+https://minzhaolyu.github.io/dataset/MultimediaNetworkTrafficDataset.
+
+The dataset is organized as follows:
+```
+data/
+├── <video_provider>/
+│   ├── <device_type>/
+│   │   ├── <software_agent_1>.pcapng
+│   │   ├── <software_agent_2>.pcapng
+│   │   ├── ...
+│   │   └── <software_agent_N>.pcapng
+│   └── ...
+└── ...
+```
+
+For further data enquiries, please contact the corresponding author, [Minzhao Lyu](mailto:minzhao.lyu@unsw.edu.au).
